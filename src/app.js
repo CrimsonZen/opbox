@@ -19,24 +19,20 @@ class App extends React.Component {
           <StanceMap stance={stance}></StanceMap>
           <ActionBar actions={stance.actions}></ActionBar>
         </div>
-        <div className="playground">
-          <p>Temporary scratchpad in case you want to render anything in particular:</p>
-          <AButton />
-          <BButton />
-        </div>
       </div>
     );
   }
+}
 
-  constructor() {
-    super();
-    this.state = {
-      events: {
-        SOON: {},
-        TAP_DOWN: {},
-        JUMP: {}
-      },
-    };
+class Playground extends React.Component {
+  render() {
+    return (
+      <div className="playground">
+        <p>Temporary scratchpad in case you want to render anything in particular:</p>
+        <AButton />
+        <BButton />
+      </div>
+    );
   }
 }
 
@@ -44,6 +40,7 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App} />
     <Route path="/:stanceId" component={App} />
+    <Route path="/playground" component={Playground} />
   </Router>,
   document.getElementById('app')
 );
