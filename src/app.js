@@ -9,7 +9,7 @@ class App extends React.Component {
         const stance = stances[this.state.currentStance];
         return (
             <div>
-                <StanceMap stance={stance} stances={stances}></StanceMap>
+                <StanceMap stance={stance}></StanceMap>
                 <ActionBar actions={stance.actions} takeAction={this.takeAction}></ActionBar>
             </div>
         );
