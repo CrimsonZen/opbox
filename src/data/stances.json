@@ -1,6 +1,7 @@
 {
   "STANDING": {
-    "name": "STANDING",
+    "id": "STANDING",
+    "name": "Standing",
     "actions": [
       {
         "event": "JUMP",
@@ -9,7 +10,8 @@
     ]
   },
   "JUMPSQUAT": {
-    "name": "JUMPSQUAT",
+    "id": "JUMPSQUAT",
+    "name": "Jumpsquat",
     "actions": [
       {
         "event": "SOON",
@@ -18,16 +20,19 @@
     ]
   },
   "RISING": {
-    "name": "RISING",
+    "id": "RISING",
+    "name": "Rising",
     "actions": [
       {
-        "event": "SOON",
+        "id": "SOON",
+        "event": "Soon",
         "stance": "FALLING"
       }
     ]
   },
   "FALLING": {
-    "name": "FALLING",
+    "id": "FALLING",
+    "name": "Falling",
     "actions": [
       {
         "event": "SOON",
@@ -40,7 +45,8 @@
     ]
   },
     "FASTFALLING": {
-      "name": "FASTFALLING",
+      "id": "FASTFALLING",
+      "name": "Fast-falling",
       "actions": [
         {
           "event": "SOON",
@@ -49,7 +55,8 @@
       ]
     },
     "SOFT_LANDING": {
-      "name": "SOFT_LANDING",
+      "id": "SOFT_LANDING",
+      "name": "Soft Landing",
       "actions": [
         {
           "event": "SOON",
@@ -58,7 +65,8 @@
       ]
     },
     "HARD_LANDING": {
-      "name": "HARD_LANDING",
+      "id": "HARD_LANDING",
+      "name": "Hard Landing",
       "actions": [
         {
           "event": "SOON",
