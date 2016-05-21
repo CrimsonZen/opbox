@@ -58,7 +58,11 @@ svg.round-button {
   border-bottom: 1px solid rgb(50, 50, 50);
 }
 
-.action-item button {
+.action-item a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
   border: 0;
   padding: 0;
   margin: 0;
@@ -67,4 +71,16 @@ svg.round-button {
 
   outline: none;
   box-shadow: none;
+}
+
+.action-item .content {
+  display: block;
+  width: 100%;
+
+  font-weight: 400;
+}
+
+.action-item .content:hover {
+  cursor: pointer;
+  font-weight: 500;
 }

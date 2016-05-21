@@ -10,7 +10,7 @@ class ActionBar extends React.Component {
           <div className="action-bar">
             <ul>
                 {this.props.actions.map(action => (
-                    <ActionListItem action={action} takeAction={this.props.takeAction}/>
+                    <ActionListItem action={action} />
                 ))}
             </ul>
           </div>
