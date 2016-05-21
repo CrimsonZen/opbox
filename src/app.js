@@ -38,9 +38,9 @@ class Playground extends React.Component {
 
 ReactDOM.render(
   <Router history={hashHistory}>
+    <Route path="/playground" component={Playground} />
     <Route path="/" component={App} />
     <Route path="/:stanceId" component={App} />
-    <Route path="/playground" component={Playground} />
   </Router>,
   document.getElementById('app')
 );
