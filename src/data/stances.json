@@ -24,8 +24,7 @@
     "name": "Rising",
     "actions": [
       {
-        "id": "SOON",
-        "event": "Soon",
+        "event": "SOON",
         "stance": "FALLING"
       }
     ]
