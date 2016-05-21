@@ -1,5 +1,18 @@
 {
   "SOON": {},
-  "TAP_DOWN": {},
-  "JUMP": {}
+  "CS_NEUTRAL": {},
+  "CS_UP_LIGHT": {},
+  "CS_DOWN_LIGHT": {},
+  "CS_LEFT_LIGHT": {},
+  "CS_RIGHT_LIGHT": {},
+  "CS_UP_TILT": {},
+  "CS_DOWN_TILT": {},
+  "CS_LEFT_TILT": {},
+  "CS_RIGHT_TILT": {},
+  "CS_UP_TAP": {},
+  "CS_DOWN_TAP": {},
+  "CS_LEFT_TAP": {},
+  "CS_RIGHT_TAP": {},
+  "JUMP_PRESS": {},
+  "JUMP_RELEASE": {},
 }

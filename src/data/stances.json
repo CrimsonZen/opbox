@@ -4,7 +4,7 @@
     "name": "Standing",
     "actions": [
       {
-        "event": "JUMP",
+        "event": "JUMP_PRESS",
         "stance": "JUMPSQUAT"
       }
     ]
@@ -38,7 +38,7 @@
         "stance": "SOFT_LANDING"
       },
       {
-        "event": "TAP_DOWN",
+        "event": "CS_DOWN_TAP",
         "stance": "FASTFALLING"
       }
     ]
