@@ -1,0 +1,22 @@
+svg.round-button {
+  width: 40px;
+  height: 40px;
+
+  font-size: 25px;
+  font-family: sans-serif;
+
+  stroke: black;
+  stroke-weight: 1;
+}
+
+.a-button {
+  fill: rgb(0, 189, 141);
+}
+
+.b-button {
+  fill: rgb(255, 0, 0);
+}
+
+.button-content {
+  fill: black;
+}
