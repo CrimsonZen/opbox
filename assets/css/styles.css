@@ -1,3 +1,19 @@
+/* Extra resetting
+ * ===============
+ */
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Okay real styles now
+ * ====================
+ */
 svg.round-button {
   width: 40px;
   height: 40px;
@@ -19,4 +35,36 @@ svg.round-button {
 
 .button-content {
   fill: black;
+}
+
+.option-box {
+  display: flex;
+  border-bottom: 1px solid rgb(127, 127, 127);
+}
+
+.action-bar {
+  width: 400px;
+  border-left: 1px solid rgb(127, 127, 127);
+}
+
+.action-bar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.action-item {
+  width: 100%;
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+.action-item button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  width: 100%;
+
+  outline: none;
+  box-shadow: none;
 }

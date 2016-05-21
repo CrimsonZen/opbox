@@ -19,7 +19,7 @@ class StanceMap extends React.Component {
     )
 
     return (
-      <div>
+      <div className="stance-map">
         <svg width="800" height="600">
           {currentStance}
           <svg x="0" y="60%">

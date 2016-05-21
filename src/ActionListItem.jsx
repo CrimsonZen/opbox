@@ -6,11 +6,11 @@ import React from "react";
 class ActionListItem extends React.Component {
     render() {
         return (
-            <li>
+            <li className="action-item">
                 <button onClick={() => this.props.takeAction(this.props.action)}>
                     {this.props.action.event}
                 </button>
-                
+
             </li>
         )
     }

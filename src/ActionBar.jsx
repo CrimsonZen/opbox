@@ -7,11 +7,13 @@ import ActionListItem from "./ActionListItem.jsx"
 class ActionBar extends React.Component {
     render() {
         return (
+          <div className="action-bar">
             <ul>
                 {this.props.actions.map(action => (
                     <ActionListItem action={action} takeAction={this.props.takeAction}/>
                 ))}
             </ul>
+          </div>
         )
     }
     static propTypes() {
