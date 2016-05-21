@@ -4,6 +4,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import stances from "./data/stances.json"
 
+import { AButton, BButton } from './Controller.jsx';
+
 class App extends React.Component {
     render() {
         const stance = stances[this.state.currentStance];
@@ -11,6 +13,8 @@ class App extends React.Component {
             <div>
                 <StanceMap stance={stance}></StanceMap>
                 <ActionBar actions={stance.actions} takeAction={this.takeAction}></ActionBar>
+                <AButton />
+                <BButton />
             </div>
         );
     }
