@@ -11,11 +11,7 @@ class StanceMap extends React.Component {
     render() {
         return (
             <div>
-                {this.props.stance.name}
                 <svg width="800" height="600">
-                    <g transform="translate(350, 250)">
-                        <StanceBox stance={this.props.stance}></StanceBox>
-                    </g>
                     {this.renderBoxes()}
                 </svg>
             </div>
@@ -29,10 +25,11 @@ class StanceMap extends React.Component {
         let results = [];
         for (var name in this.props.stances) {
             let stance = this.props.stances[name];
-            x += 50;
-            y += 20;
+            x += 0;
+            y += 25;
             let t = `translate(${x}, ${y})`;
-            results.push(<g transform={t}><StanceBox stance={stance}/></g>);
+            let weight = this.props.stance.name == name ? 'bold' : 'normal';
+            results.push(<g transform={t} style={{fontWeight: weight}}><StanceBox stance={stance}/></g>);
         }
         return results;
     }
