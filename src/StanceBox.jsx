@@ -2,6 +2,7 @@
 * Created by Chris on 5/20/2016.
 */
 import React from "react";
+import { Link } from 'react-router';
 
 class StanceBox extends React.Component {
   // current state - reference to state object + meta-state
@@ -11,7 +12,10 @@ class StanceBox extends React.Component {
     const picture = this.props.stance.picture || "https://placehold.it/150x150";
     return (
       <g className="stance-box">
-        <image href={picture} width="150px" height="150px"/>
+        <Link to={`/${this.props.stance.id}`}>
+          <image href={picture} width="150px" height="150px"/>
+        </Link>
+
         <text style={{ fontWeight: fontStyle }}>{this.props.stance.name}</text>
       </g>
     );
