@@ -1,0 +1,6 @@
+{
+  "watch": ["server.js"],
+  "stdin": false,
+  "restartable": false,
+  "quiet": true
+}

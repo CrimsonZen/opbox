@@ -1,0 +1,69 @@
+{
+  "STANDING": {
+    "name": "STANDING",
+    "actions": [
+      {
+        "event": "JUMP",
+        "stance": "JUMPSQUAT"
+      }
+    ]
+  },
+  "JUMPSQUAT": {
+    "name": "JUMPSQUAT",
+    "actions": [
+      {
+        "event": "SOON",
+        "stance": "RISING"
+      }
+    ]
+  },
+  "RISING": {
+    "name": "RISING",
+    "actions": [
+      {
+        "event": "SOON",
+        "stance": "FALLING"
+      }
+    ]
+  },
+  "FALLING": {
+    "name": "FALLING",
+    "actions": [
+      {
+        "event": "SOON",
+        "stance": "SOFT_LANDING"
+      },
+      {
+        "event": "TAP_DOWN",
+        "stance": "FASTFALLING"
+      }
+    ]
+  },
+    "FASTFALLING": {
+      "name": "FASTFALLING",
+      "actions": [
+        {
+          "event": "SOON",
+          "stance": "HARD_LANDING"
+        }
+      ]
+    },
+    "SOFT_LANDING": {
+      "name": "SOFT_LANDING",
+      "actions": [
+        {
+          "event": "SOON",
+          "stance": "STANDING"
+        }
+      ]
+    },
+    "HARD_LANDING": {
+      "name": "HARD_LANDING",
+      "actions": [
+        {
+          "event": "SOON",
+          "stance": "STANDING"
+        }
+      ]
+    }
+  }
